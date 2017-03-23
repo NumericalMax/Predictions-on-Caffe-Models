@@ -1,12 +1,10 @@
-# Predicting test samples with a Caffe model
+## Predicting test samples with a Caffe model
 
 Making predictions on a bunch of test images in Nvidia Digits can easily achieved by the contained function **Classify Many Images**. However the ouput format is frequently not in the supposed format. For instance taking part in machine learning competations require frequently a comma-seperated format as submission. According, this small python code creates such a format based on a trained Caffe model in Nvidia Digits.
 
 Assume you have trained a Caffe Model in Nvidia Digits, then the following steps have to be performed:
-
-  >•	Download the Model at a suitable Epoch
-  
-  >•	Execute the python code with suitable FLAGS. Exemplary:
+1. Download the Model at a suitable Epoch
+2. Execute the python code with suitable FLAGS. Exemplary:
 ```
 python createPrediction.py --image_dir=/home/user/data/dataset/test/*.jpg --prediction_file=/home/user/submissions/solution.txt --model_dir=/home/user/downloads/model/ --caffe_model=snapshot_iter_100.caffemodel
 ```
