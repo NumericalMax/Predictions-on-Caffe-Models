@@ -57,7 +57,7 @@ def main(args):
 	#net.blobs['data'].reshape(3, 224, 224)
 	net.blobs['data'].reshape(1, 3, 227, 227)
 	# Predict Images
-	ll = len(testFiles) / FLAGS.batch_size;
+	ll = len(testFiles) #/ FLAGS.batch_size;
 	print(str(ll) + ' Files are tested!')
 	for k in range(0,ll):
 		
