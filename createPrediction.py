@@ -54,7 +54,7 @@ def main(args):
 	transformer.set_channel_swap('data', (2,1,0))	
 	transformer.set_mean('data', mu)
 
-	#net.blobs['data'].reshape(1, 3, 227, 227)
+	#net.blobs['data'].reshape(3, 224, 224)
 	net.blobs['data'].reshape(1, 3, 227, 227)
 	# Predict Images
 	ll = len(testFiles) / FLAGS.batch_size;
