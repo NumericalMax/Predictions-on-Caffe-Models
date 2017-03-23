@@ -5,6 +5,7 @@ Making predictions on a bunch of test images in Nvidia Digits can easily achieve
 Assume you have trained a Caffe Model in Nvidia Digits, then the following steps have to be performed:
 
   •	Download the Model at a suitable Epoch
+  
   •	Execute the python code with suitable FLAGS.
     Exemplary:
     python createPrediction.py --image_dir=/home/user/data/dataset/test/*.jpg --prediction_file=/home/user/submissions/solution.txt --model_dir=/home/user/downloads/model/ --caffe_model=snapshot_iter_100.caffemodel
